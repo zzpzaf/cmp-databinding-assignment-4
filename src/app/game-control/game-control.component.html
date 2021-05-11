@@ -1,0 +1,26 @@
+
+<hr>
+<div class="container">
+    <h3>Game-control works!</h3>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Start / Stop the Game!</p>
+        <!-- <label>Server Name</label>
+        <input type="text" class="form-control" [(ngModel)]="newServerName">
+        <label>Server Content</label>
+        <input type="text" class="form-control" [(ngModel)]="newServerContent">
+        <br> -->
+        <button
+          class="btn btn-primary"
+          [disabled] = "btn_state_stop"
+          (click)="onStart()">Start</button>
+        <button
+          class="btn btn-danger"
+          [disabled] = "btn_state_start"
+          (click)="onStop()">Stop</button>
+      </div>
+    </div>
+
+    <hr>
+
+</div>
