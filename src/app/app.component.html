@@ -14,4 +14,28 @@
       </ol>
     </div>
   </div>
+
+  <hr>
+
+  <!-- This is to emit the EventTick emitter from app-game-conttrol -->
+  <!-- Then it is captured in this (parent) component: app-root in method onSecTicked() -->
+  <app-game-control (EvenTick) = onSecTicked($event)></app-game-control>
+
+  <div *ngFor="let i of counter">
+    <p>
+      {{i}}
+      <app-even *ngIf= "i % 2 === 0"></app-even> 
+      <!-- <app-even *ngIf= "even"></app-even>  -->
+      <app-odd *ngIf= "i % 2 !== 0"></app-odd>
+      <!-- <app-odd *ngIf= "!even"></app-odd> -->
+    </p>
+
+
+  </div>
+
+
 </div>
+
+
+
+
